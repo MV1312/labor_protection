@@ -77,3 +77,26 @@ var tickets = [
 @onready var questions_container = $ScrollContainer/VBoxContainer
 @onready var answer_panel = $Panel
 @onready var answer_label = $Panel/Label
+
+func _ready():
+	create_question_buttons() # создаст все кнопки с вопросами.
+	answer_panel.hide() # прячем панель с ответом
+
+# Функция для генерации кнопок с вопросами 
+func create_question_buttons(): 
+	for i in range(tickets.size()):
+		var button = Button.new()
+		button.text = tickets[i][0]
+		button.pressed.connect(_on_question_button_pressed.bind(i))
+		questions_container.add_child(button)
+
+# Функция показа ответа
+func _on_question_button_pressed(index: int):
+	answer_label.text = tickets[index][1]
+	answer_panel.show()
+	
+# Функция «Назад»
+func _on_back_button_pressed():
+	answer_panel.hide()
+	
+	
