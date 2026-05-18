@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://br21tgc7l8xeg"]
 
+[ext_resource type="Script" uid="uid://b5vrto2k34ay8" path="res://scenes/main.gd" id="1_0aq6d"]
 [ext_resource type="Texture2D" uid="uid://odrqpnvao8vl" path="res://image /menu_mobile.png" id="1_o5qli"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5qli"]
@@ -14,6 +15,7 @@ anchor_right = 1.0120001
 anchor_bottom = 0.98800004
 offset_right = 0.17590332
 offset_bottom = -0.22399902
+script = ExtResource("1_0aq6d")
 metadata/_edit_lock_ = true
 
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1077808367]

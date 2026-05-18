@@ -74,13 +74,15 @@ var tickets = [
 	# Добавьте/удалите вопросы если необходимо 
 ]
 
-@onready var questions_container = $ScrollContainer/VBoxContainer
+@onready var questions_container = get_node("ScrollContainer/VBoxContainer")
 @onready var answer_panel = $Panel
 @onready var answer_label = $Panel/Label
 
 func _ready():
 	create_question_buttons() # создаст все кнопки с вопросами.
 	answer_panel.hide() # прячем панель с ответом
+	create_question_buttons()
+	_on_back_button_pressed()
 
 # Функция для генерации кнопок с вопросами 
 func create_question_buttons(): 
