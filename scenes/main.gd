@@ -1,8 +1,8 @@
 extends Control
 
 var tickets = [
-	["1. Вредные и (или) опасные производственные факторы, воздействующие на работника, выполняющего работы на высоте.", "Ответ: "],
-	["2. Основные причины падения работников с высоты, причины падения предметов на работника.", "Ответ: "],
+	["1. Вредные и (или) опасные производственные факторы, воздействующие на работника, выполняющего работы на высоте.", "Ответ: 1"],
+	["2. Основные причины падения работников с высоты, причины падения предметов на работника.", "Ответ: 2"],
 	["3. Факторы, при которых выполнение работ на высоте должно быть прекращено.", "Ответ: "],
 	["4. Средства индивидуальной защиты от падения с высоты. Выбор средств индивидуальной защиты.", "Ответ: "],
 	["5. Требования к работникам, выполняющим работы на высоте.", "Ответ: "],
@@ -83,22 +83,45 @@ func _ready():
 	answer_panel.hide() # прячем панель с ответом
 	create_question_buttons()
 	_on_back_button_pressed()
+	
 
 # Функция для генерации кнопок с вопросами 
 func create_question_buttons(): 
 	for i in range(tickets.size()):
 		var button = Button.new()
 		button.text = tickets[i][0]
+		button.set_text_alignment(HORIZONTAL_ALIGNMENT_LEFT) # отображение текста с лева
+		
+		# Основные настройки шрифта
+		button.add_theme_font_size_override("font_size", 40)
+		
+		# Настройка выравнивания текста по левому краю
+		# button.theme_type_variation = "Button" # Убедись, что используешь базовый тип
+		# var default_font_size = button.get_theme_font_size("font_size")
+		# var default_font = button.get_theme_font("font")
+		#button.add_theme_constant_override("text_alignment", HORIZONTAL_ALIGNMENT_LEFT)
+		
+		
+		#button.add_child(label)
+		
+		# Дополнительные настройки
+		#button.custom_minimum_size = Vector2(0, 50)  # Минимальная высота кнопки
+		#button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		
+		#button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART  # Умный перенос слов
+		#button.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS  # Многоточие если текст не помещается
+		
 		button.pressed.connect(_on_question_button_pressed.bind(i))
 		questions_container.add_child(button)
+		
+		
+		
 
 # Функция показа ответа
 func _on_question_button_pressed(index: int):
-	answer_label.text = tickets[index][1]
+	answer_label.text = tickets[index][0] + "\n"+ tickets[index][1]
 	answer_panel.show()
 	
 # Функция «Назад»
 func _on_back_button_pressed():
 	answer_panel.hide()
-	
-	
