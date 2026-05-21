@@ -1,7 +1,6 @@
 extends Control
 
-var tickets = [
-	["1. Вредные и (или) опасные производственные факторы, воздействующие на \n     работника, выполняющего работы на высоте.", "Ответ: 1"],
+var tickets = [["1. Вредные и (или) опасные производственные факторы, воздействующие на \n     работника, выполняющего работы на высоте.", "Ответ: 1"],
 	["2. Основные причины падения работников с высоты, причины падения предметов \n     на работника.", "Ответ: 2"],
 	["3. Факторы, при которых выполнение работ на высоте должно быть прекращено.", "Ответ: "],
 	["4. Средства индивидуальной защиты от падения с высоты. Выбор средств \n     индивидуальной защиты.", "Ответ: "],
@@ -72,47 +71,48 @@ var tickets = [
 	["69. Правила транспортирования пострадавшего.", "Ответ: "],
 	["70. Медицинская аптечка, её содержание и правила пользования.", "Ответ: "],
 	# Добавьте/удалите вопросы если необходимо 
+	# ... ваш массив без изменений ...
 ]
 
-@onready var questions_container = get_node("ScrollContainer/VBoxContainer")
+@onready var scroll_container: ScrollContainer = $ScrollContainer
+@onready var questions_container: VBoxContainer = $ScrollContainer/VBoxContainer
 @onready var answer_panel = $Panel
 @onready var answer_label = $Panel/Label
 
 func _ready():
-	create_question_buttons() # создаст все кнопки с вопросами.
-	_on_back_button_pressed()
+	# 1. Отключаем автоматическую прокрутку к элементу с фокусом
+	scroll_container.follow_focus = false
+	# Опционально: убираем горизонтальный скролл, если он не нужен
+	#scroll_container.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	
+	create_question_buttons()
+	_on_back_button_pressed()
 
-# Функция для генерации кнопок с вопросами 
 func create_question_buttons(): 
 	for i in range(tickets.size()):
 		var button = Button.new()
 		button.text = tickets[i][0]
-		button.set_text_alignment(HORIZONTAL_ALIGNMENT_LEFT) # отображение текста с лева
-		
-		# Основные настройки шрифта
+		button.set_text_alignment(HORIZONTAL_ALIGNMENT_LEFT)
 		button.add_theme_font_size_override("font_size", 40)
+		button.custom_minimum_size = Vector2(0, 70)
 		
-		
-		# Дополнительные настройки
-		button.custom_minimum_size = Vector2(0, 70)  # Минимальная высота кнопки
+		# 2. Разрешаем событиям мыши/тача "всплывать" к ScrollContainer
+		button.mouse_filter = Control.MOUSE_FILTER_PASS
+		# 3. Запрещаем кнопке принимать фокус ввода
+		button.focus_mode = Control.FOCUS_NONE
 		
 		button.pressed.connect(_on_question_button_pressed.bind(i))
 		questions_container.add_child(button)
 		
-		
-func _input(event: InputEvent) -> void:
-	if event is InputEventScreenTouch and event.pressed:
-		# Проверяем, находится ли точка касания в пределах контейнера
-		if get_global_rect().has_point(event.position):
-			questions_container.mouse_behavior_recursive = Control.MOUSE_BEHAVIOR_INHERITED
-			
-# Функция показа ответа
+	# 4. Заставляем VBoxContainer мгновенно пересчитать итоговую высоту
+	questions_container.queue_sort()
+
 func _on_question_button_pressed(index: int):
 	answer_label.text = tickets[index][0] + "\n\n" + tickets[index][1]
 	answer_panel.show()
-	
-	
-# Функция «Назад»
+	# Страховка: явно снимаем фокус (если вдруг он включён где-то ещё)
+	get_viewport().gui_release_focus()
+
 func _on_back_button_pressed():
 	answer_panel.hide()
+	get_viewport().gui_release_focus()
