@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://br21tgc7l8xeg"]
 
 [ext_resource type="Script" uid="uid://b5vrto2k34ay8" path="res://scenes/main.gd" id="1_0aq6d"]
-[ext_resource type="Texture2D" uid="uid://odrqpnvao8vl" path="res://image /menu_mobile.png" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://do08luisv1qrr" path="res://image /img_6a10382309eb18.00956655.png" id="2_0aq6d"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5qli"]
 bg_color = Color(1, 1, 0.98758966, 1)
@@ -48,10 +48,11 @@ anchors_preset = -1
 anchor_top = 0.087000005
 anchor_right = 1.0
 anchor_bottom = 0.99500006
-offset_top = 0.31999588
+offset_top = 3.3199959
 offset_right = 11.0
 offset_bottom = 0.2399292
-theme_override_font_sizes/font_size = 40
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.73300004)
+theme_override_font_sizes/font_size = 39
 metadata/_edit_lock_ = true
 
 [node name="Button" type="Button" parent="Panel" unique_id=1090580016]
@@ -61,26 +62,14 @@ anchor_right = 1.0
 anchor_bottom = 0.2
 offset_left = -1.0
 offset_top = 1.9999999
-offset_right = -10.650635
-offset_bottom = 60.026047
-scale = Vector2(0.29848605, 0.2825253)
+offset_right = 1899.5442
+offset_bottom = 1623.9115
+scale = Vector2(0.097830005, 0.032573078)
 theme_override_colors/font_outline_color = Color(0.97823566, 0.990015, 0.9997296, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_o5qli")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_0wfyh")
-icon = ExtResource("1_o5qli")
+icon = ExtResource("2_0aq6d")
 icon_alignment = 1
-metadata/_edit_lock_ = true
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Panel" unique_id=243477941]
-visible = false
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.99100006
-anchor_bottom = 1.0020001
-offset_left = 3.0
-offset_top = 52.0
-offset_right = -0.5061035
-offset_bottom = -0.2800293
 metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="Panel/Button" to="." method="_on_back_button_pressed"]
