@@ -42,34 +42,36 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_lock_ = true
 
-[node name="Label" type="Label" parent="Panel" unique_id=847432160]
+[node name="ScrollContainer2" type="ScrollContainer" parent="Panel" unique_id=2002891173]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.087000005
-anchor_right = 1.0
-anchor_bottom = 0.99500006
-offset_top = 3.3199959
-offset_right = 11.0
-offset_bottom = 0.2399292
+anchor_top = 0.094000004
+anchor_right = 0.989
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -0.16000366
+offset_right = -0.17407227
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="Panel/ScrollContainer2" unique_id=847432160]
+layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.73300004)
 theme_override_font_sizes/font_size = 39
 metadata/_edit_lock_ = true
 
 [node name="Button" type="Button" parent="Panel" unique_id=1090580016]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 0.2
-offset_left = -1.0
-offset_top = 1.9999999
-offset_right = 1899.5442
-offset_bottom = 1623.9115
-scale = Vector2(0.097830005, 0.032573078)
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1255.0
+offset_bottom = 1255.0
+scale = Vector2(0.22693989, 0.047296897)
 theme_override_colors/font_outline_color = Color(0.97823566, 0.990015, 0.9997296, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_o5qli")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_0wfyh")
 icon = ExtResource("2_0aq6d")
 icon_alignment = 1
-metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="Panel/Button" to="." method="_on_back_button_pressed"]
