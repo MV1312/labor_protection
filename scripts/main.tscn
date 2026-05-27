@@ -3,6 +3,13 @@
 [ext_resource type="Script" uid="uid://b5vrto2k34ay8" path="res://scenes/main.gd" id="1_0aq6d"]
 [ext_resource type="Texture2D" uid="uid://do08luisv1qrr" path="res://image /img_6a10382309eb18.00956655.png" id="2_0aq6d"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_irwmq"]
+bg_color = Color(0.040802658, 0.03729167, 0.004889105, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0aq6d"]
+content_margin_left = 100.0
+bg_color = Color(0, 0.10567597, 0.09609204, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5qli"]
 bg_color = Color(1, 1, 0.98758966, 1)
 
@@ -23,10 +30,13 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 39.0
+offset_top = 34.0
+offset_right = -3.0
+offset_bottom = 34.0
 grow_horizontal = 2
 grow_vertical = 2
 scroll_horizontal_custom_step = 0.0
-metadata/_edit_lock_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=1590031518]
 layout_mode = 2
@@ -40,6 +50,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_irwmq")
 metadata/_edit_lock_ = true
 
 [node name="ScrollContainer2" type="ScrollContainer" parent="Panel" unique_id=2002891173]
@@ -59,6 +70,7 @@ metadata/_edit_lock_ = true
 layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.73300004)
 theme_override_font_sizes/font_size = 39
+theme_override_styles/normal = SubResource("StyleBoxFlat_0aq6d")
 metadata/_edit_lock_ = true
 
 [node name="Button" type="Button" parent="Panel" unique_id=1090580016]
@@ -73,5 +85,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_o5qli")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_0wfyh")
 icon = ExtResource("2_0aq6d")
 icon_alignment = 1
+metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="Panel/Button" to="." method="_on_back_button_pressed"]
