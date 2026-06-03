@@ -3,6 +3,24 @@
 [ext_resource type="Script" uid="uid://itohrynbum5e" path="res://rich_text_label.gd" id="1_0wfyh"]
 [ext_resource type="Script" uid="uid://berxmgr0j1k4o" path="res://scripts/rich_text_label_2.gd" id="1_o5qli"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wfyh"]
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sugp2"]
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jyhfs"]
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
 [node name="Control" type="Control" unique_id=1838972906]
 layout_mode = 3
 anchors_preset = 15
@@ -12,7 +30,7 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_lock_ = true
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1124756761]
+[node name="TelegramLabel" type="RichTextLabel" parent="." unique_id=1124756761]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.061000004
@@ -27,11 +45,11 @@ theme_override_colors/default_color = Color(0.17085916, 0.7360148, 0.92148155, 1
 theme_override_font_sizes/normal_font_size = 25
 theme_override_font_sizes/bold_font_size = 18
 bbcode_enabled = true
-text = "Мой Телеграмм:    [url=\"https://t.me/Rukbat_V\"]Telegram"
+text = "Телеграмм:    [url=\"https://t.me/Rukbat_V\"]Telegram"
 script = ExtResource("1_0wfyh")
 metadata/_edit_lock_ = true
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=1032435986]
+[node name="ViberLabel2" type="RichTextLabel" parent="." unique_id=1032435986]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.060000002
@@ -45,6 +63,77 @@ offset_bottom = 0.7999878
 theme_override_colors/default_color = Color(0.4616899, 0.4837138, 1, 1)
 theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
-text = "Мой Вайбер:   [url=\"https://vb.me/letsChatOnViber\"]Viber[/url]"
+text = "Вайбер:   [url=\"https://vb.me/letsChatOnViber\"]Viber[/url]"
 script = ExtResource("1_o5qli")
 metadata/_edit_lock_ = true
+
+[node name="SocialNetworks" type="RichTextLabel" parent="." unique_id=763582038]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.72700006
+anchor_right = 0.425
+anchor_bottom = 0.80700004
+offset_left = 112.0
+offset_top = 8.903961
+offset_right = 112.399994
+offset_bottom = 9.063965
+theme_override_font_sizes/normal_font_size = 25
+text = "Вопросы / Предложения:"
+metadata/_edit_lock_ = true
+
+[node name="Header" type="Label" parent="." unique_id=1933942826]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 6.0
+offset_right = 1255.0
+offset_bottom = 142.0
+theme_override_font_sizes/font_size = 70
+text = "ВОПРОСЫ ДЛЯ КОНТРОЛЯ ЗНАНИЙ (ЗАЧЕТА)"
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="." unique_id=72837373]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.102000006
+anchor_top = 0.20400001
+anchor_right = 0.293
+anchor_bottom = 0.40100002
+offset_left = 0.49599457
+offset_top = 2.8079987
+offset_right = -0.53601074
+offset_bottom = 0.15197754
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_0wfyh")
+text = " I гр. "
+metadata/_edit_lock_ = true
+
+[node name="Button2" type="Button" parent="." unique_id=700792666]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.39900002
+anchor_top = 0.20400001
+anchor_right = 0.58900005
+anchor_bottom = 0.39800003
+offset_left = 0.35198975
+offset_top = 0.80799866
+offset_right = 0.47192383
+offset_bottom = 0.09597778
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_sugp2")
+text = " II гр. "
+metadata/_edit_lock_ = true
+
+[node name="Button3" type="Button" parent="." unique_id=900160792]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.69100004
+anchor_top = 0.20700002
+anchor_right = 0.883
+anchor_bottom = 0.4
+offset_left = -0.032043457
+offset_top = -0.13601685
+offset_right = -0.21600342
+offset_bottom = -0.2000122
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_jyhfs")
+text = " III гр. "
