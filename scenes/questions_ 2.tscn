@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://br21tgc7l8xeg"]
 
-[ext_resource type="Script" uid="uid://b5vrto2k34ay8" path="res://scenes/main.gd" id="1_0aq6d"]
-[ext_resource type="Texture2D" uid="uid://do08luisv1qrr" path="res://image /img_6a10382309eb18.00956655.png" id="2_0aq6d"]
+[ext_resource type="Script" uid="uid://b5vrto2k34ay8" path="res://scripts/questions_2.gd" id="1_li1lj"]
+[ext_resource type="Texture2D" uid="uid://do08luisv1qrr" path="res://image /img_6a10382309eb18.00956655.png" id="2_xwhvc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_irwmq"]
 bg_color = Color(0.040802658, 0.03729167, 0.004889105, 1)
@@ -22,7 +22,7 @@ anchor_right = 1.0120001
 anchor_bottom = 0.98800004
 offset_right = 0.17590332
 offset_bottom = -0.22399902
-script = ExtResource("1_0aq6d")
+script = ExtResource("1_li1lj")
 metadata/_edit_lock_ = true
 
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1077808367]
@@ -90,7 +90,7 @@ scale = Vector2(0.22693989, 0.047296897)
 theme_override_colors/font_outline_color = Color(0.97823566, 0.990015, 0.9997296, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_o5qli")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_0wfyh")
-icon = ExtResource("2_0aq6d")
+icon = ExtResource("2_xwhvc")
 icon_alignment = 1
 metadata/_edit_lock_ = true
 

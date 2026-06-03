@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://ciq7xo3obxfhx"]
+
+[node name="Control" type="Control" unique_id=1838972906]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1124756761]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.061000004
+anchor_top = 0.89400005
+anchor_right = 0.38900003
+anchor_bottom = 0.975
+offset_left = -0.27200317
+offset_top = -0.31201172
+offset_right = -0.12802124
+offset_bottom = 0.2000122
+theme_override_colors/default_color = Color(0.17085916, 0.7360148, 0.92148155, 1)
+theme_override_font_sizes/normal_font_size = 25
+theme_override_font_sizes/bold_font_size = 18
+bbcode_enabled = true
+text = "Мой Телеграмм:    [url=\"https://t.me/Rukbat_V\"]Telegram"
+metadata/_edit_lock_ = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=1032435986]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.060000002
+anchor_top = 0.81500006
+anchor_right = 0.305
+anchor_bottom = 0.90000004
+offset_left = -0.12000275
+offset_top = -0.12005615
+offset_right = -2.3600159
+offset_bottom = 0.7999878
+theme_override_colors/default_color = Color(0.4616899, 0.4837138, 1, 1)
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "Мой Вайбер:   [url=\"https://invite.viber.com/ваша_ссылка\"]Viber[/url]"
+metadata/_edit_lock_ = true
