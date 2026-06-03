@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://ciq7xo3obxfhx"]
 
+[ext_resource type="Script" uid="uid://itohrynbum5e" path="res://rich_text_label.gd" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://berxmgr0j1k4o" path="res://scripts/rich_text_label_2.gd" id="1_o5qli"]
+
 [node name="Control" type="Control" unique_id=1838972906]
 layout_mode = 3
 anchors_preset = 15
@@ -25,6 +28,7 @@ theme_override_font_sizes/normal_font_size = 25
 theme_override_font_sizes/bold_font_size = 18
 bbcode_enabled = true
 text = "Мой Телеграмм:    [url=\"https://t.me/Rukbat_V\"]Telegram"
+script = ExtResource("1_0wfyh")
 metadata/_edit_lock_ = true
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=1032435986]
@@ -41,5 +45,6 @@ offset_bottom = 0.7999878
 theme_override_colors/default_color = Color(0.4616899, 0.4837138, 1, 1)
 theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
-text = "Мой Вайбер:   [url=\"https://invite.viber.com/ваша_ссылка\"]Viber[/url]"
+text = "Мой Вайбер:   [url=\"https://vb.me/letsChatOnViber\"]Viber[/url]"
+script = ExtResource("1_o5qli")
 metadata/_edit_lock_ = true
