@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="OT"
-run/main_scene="res://scenes/questions_ 2.tscn"
-config/features=PackedStringArray("4.6", "Mobile")
+run/main_scene="uid://ciq7xo3obxfhx"
+config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
 [physics]

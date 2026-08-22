@@ -2,24 +2,32 @@
 
 [ext_resource type="Script" uid="uid://itohrynbum5e" path="res://rich_text_label.gd" id="1_0wfyh"]
 [ext_resource type="Script" uid="uid://berxmgr0j1k4o" path="res://scripts/rich_text_label_2.gd" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://eotr7xmfbr35" path="res://scenes/main.gd" id="1_sugp2"]
+[ext_resource type="Script" uid="uid://bq761iqbgxs6r" path="res://scenes/info.gd" id="4_jyhfs"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wfyh"]
+bg_color = Color(0.38109186, 0.38109186, 0.38109186, 1)
 corner_radius_top_left = 30
 corner_radius_top_right = 30
 corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sugp2"]
+bg_color = Color(0.38109186, 0.38109186, 0.38109186, 1)
 corner_radius_top_left = 30
 corner_radius_top_right = 30
 corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jyhfs"]
+bg_color = Color(0.38109186, 0.38109186, 0.38109186, 1)
 corner_radius_top_left = 30
 corner_radius_top_right = 30
 corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tbgi4"]
+bg_color = Color(0.27823344, 0.2782335, 0.2782334, 1)
 
 [node name="Control" type="Control" unique_id=1838972906]
 layout_mode = 3
@@ -28,6 +36,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_sugp2")
 metadata/_edit_lock_ = true
 
 [node name="TelegramLabel" type="RichTextLabel" parent="." unique_id=1124756761]
@@ -78,7 +87,7 @@ offset_top = 8.903961
 offset_right = 112.399994
 offset_bottom = 9.063965
 theme_override_font_sizes/normal_font_size = 25
-text = "Вопросы / Предложения:"
+text = "Контактные данные:"
 metadata/_edit_lock_ = true
 
 [node name="Header" type="Label" parent="." unique_id=1933942826]
@@ -137,3 +146,46 @@ offset_bottom = -0.2000122
 theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = SubResource("StyleBoxFlat_jyhfs")
 text = " III гр. "
+metadata/_edit_lock_ = true
+
+[node name="Info" type="Button" parent="." unique_id=1494870071]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.93000007
+anchor_top = 0.887
+anchor_right = 0.96500003
+anchor_bottom = 0.924
+offset_left = -0.36010742
+offset_top = -23.776001
+offset_right = 0.3199463
+offset_bottom = -0.75201416
+theme_override_font_sizes/font_size = 29
+theme_override_styles/normal = SubResource("StyleBoxFlat_tbgi4")
+text = "i"
+script = ExtResource("4_jyhfs")
+metadata/_edit_lock_ = true
+
+[node name="InfoDialog" type="AcceptDialog" parent="." unique_id=735011659]
+oversampling_override = 1.0
+position = Vector2i(0, 36)
+size = Vector2i(5819, 522)
+dialog_text = "О приложении
+
+«Тест-драйв знаний» — простые вопросы с ответами.
+
+Как пользоваться:
+На экране — список квалификационных груп, при нажатии на одну из груп появляются вопросы в виде кнопок. Нажмите на любой вопрос — моментально увидите правильный ответ. Листайте вниз для новых вопросов.
+
+Для кого:
+Для тех, кто хочет проверить себя по теме: охрана труда при выполнении работ на высоте
+
+Важно!!!
+✔ Приложение работает полностью офлайн.
+✔ Никаких персональных данных не собирает.
+✔ Не требует доступа к контактам, камере или звонкам.
+✔ Создано физическим лицом — гражданином Республики Беларусь.
+
+
+Отдельная благодарность, при создании приложения, семье Астапова Д.Э."
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
