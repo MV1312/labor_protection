@@ -24,6 +24,7 @@ offset_right = 0.17590332
 offset_bottom = -0.22399902
 script = ExtResource("1_li1lj")
 metadata/_edit_lock_ = true
+metadata/_edit_vertical_guides_ = [0.0, 0.0]
 
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1077808367]
 layout_mode = 1

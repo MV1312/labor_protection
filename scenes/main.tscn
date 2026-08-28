@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://berxmgr0j1k4o" path="res://scripts/rich_text_label_2.gd" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://eotr7xmfbr35" path="res://scenes/main.gd" id="1_sugp2"]
 [ext_resource type="Script" uid="uid://bq761iqbgxs6r" path="res://scenes/info.gd" id="4_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://bbnsan6cf8h88" path="res://image /Info-Button.png" id="4_tbgi4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wfyh"]
 bg_color = Color(0.38109186, 0.38109186, 0.38109186, 1)
@@ -153,17 +154,18 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.93000007
 anchor_top = 0.887
-anchor_right = 0.96500003
-anchor_bottom = 0.924
+anchor_right = 0.96000004
+anchor_bottom = 0.96700007
 offset_left = -0.36010742
-offset_top = -23.776001
-offset_right = 0.3199463
-offset_bottom = -0.75201416
+offset_top = 11.223999
+offset_right = 477.07996
+offset_bottom = 522.07587
+scale = Vector2(0.07034562, 0.07290954)
 theme_override_font_sizes/font_size = 29
 theme_override_styles/normal = SubResource("StyleBoxFlat_tbgi4")
 text = "i"
+icon = ExtResource("4_tbgi4")
 script = ExtResource("4_jyhfs")
-metadata/_edit_lock_ = true
 
 [node name="InfoDialog" type="AcceptDialog" parent="." unique_id=735011659]
 oversampling_override = 1.0
