@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c4tsnc5d6ouqh"]
+
+[ext_resource type="Script" uid="uid://w3twm3dqfanx" path="res://scenes/global_ui.gd" id="1_fhyh8"]
+[ext_resource type="Texture2D" uid="uid://sab0y7v8g368" path="res://image /2249.png" id="2_5femt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_loqhc"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=191091185]
+script = ExtResource("1_fhyh8")
+
+[node name="Button" type="Button" parent="." unique_id=873862878]
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.022000002
+anchor_right = 0.106000006
+anchor_bottom = 0.123
+offset_left = -0.4320011
+offset_top = -0.25600338
+offset_right = 407.888
+offset_bottom = 446.296
+scale = Vector2(0.20404051, 0.12773217)
+theme_override_styles/normal = SubResource("StyleBoxFlat_loqhc")
+icon = ExtResource("2_5femt")
+metadata/_edit_lock_ = true

@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-GlobalUi="*uid://b6cpbhncoqeqt"
+GlobalUi="*uid://c4tsnc5d6ouqh"
 
 [physics]
 
@@ -27,3 +27,10 @@ GlobalUi="*uid://b6cpbhncoqeqt"
 
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"
+
+[shader_globals]
+
+GlobalUI={
+"type": "bool",
+"value": true
+}

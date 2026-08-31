@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://itohrynbum5e" path="res://rich_text_label.gd" id="1_0wfyh"]
 [ext_resource type="Script" uid="uid://berxmgr0j1k4o" path="res://scripts/rich_text_label_2.gd" id="1_o5qli"]
-[ext_resource type="Script" uid="uid://eotr7xmfbr35" path="res://scenes/main.gd" id="1_sugp2"]
-[ext_resource type="Script" uid="uid://bq761iqbgxs6r" path="res://scenes/info.gd" id="4_jyhfs"]
+[ext_resource type="Script" uid="uid://eotr7xmfbr35" path="res://scripts/main.gd" id="1_sugp2"]
+[ext_resource type="Script" uid="uid://bq761iqbgxs6r" path="res://scripts/info.gd" id="4_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://bbnsan6cf8h88" path="res://image /Info-Button.png" id="4_tbgi4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wfyh"]
@@ -30,7 +30,7 @@ corner_radius_bottom_left = 30
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tbgi4"]
 bg_color = Color(0.27823344, 0.2782335, 0.2782334, 1)
 
-[node name="Control" type="Control" unique_id=1838972906]
+[node name="Control_main" type="Control" unique_id=1838972906]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
