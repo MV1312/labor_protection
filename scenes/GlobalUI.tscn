@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c4tsnc5d6ouqh"]
 
-[ext_resource type="Script" uid="uid://w3twm3dqfanx" path="res://scenes/global_ui.gd" id="1_fhyh8"]
+[ext_resource type="Script" uid="uid://w3twm3dqfanx" path="res://scripts/global_ui.gd" id="1_fhyh8"]
 [ext_resource type="Texture2D" uid="uid://sab0y7v8g368" path="res://image /2249.png" id="2_5femt"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_loqhc"]
@@ -22,3 +22,5 @@ scale = Vector2(0.20404051, 0.12773217)
 theme_override_styles/normal = SubResource("StyleBoxFlat_loqhc")
 icon = ExtResource("2_5femt")
 metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
