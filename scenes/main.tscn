@@ -3,9 +3,7 @@
 [ext_resource type="Script" uid="uid://itohrynbum5e" path="res://scripts/rich_text_label.gd" id="1_0wfyh"]
 [ext_resource type="Script" uid="uid://berxmgr0j1k4o" path="res://scripts/rich_text_label_2.gd" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://eotr7xmfbr35" path="res://scripts/main.gd" id="1_sugp2"]
-[ext_resource type="Script" uid="uid://bq761iqbgxs6r" path="res://scripts/info.gd" id="4_jyhfs"]
-[ext_resource type="Texture2D" uid="uid://bbnsan6cf8h88" path="res://image /Info-Button.png" id="4_tbgi4"]
-[ext_resource type="PackedScene" uid="uid://cfirook1po6w6" path="res://scenes/info_dialog.tscn" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://bwenv0ecyp8b2" path="res://scenes/info_overlay.tscn" id="5_tbgi4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wfyh"]
 bg_color = Color(0.38109186, 0.38109186, 0.38109186, 1)
@@ -27,9 +25,6 @@ corner_radius_top_left = 30
 corner_radius_top_right = 30
 corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tbgi4"]
-bg_color = Color(0.27823344, 0.2782335, 0.2782334, 1)
 
 [node name="Control_main" type="Control" unique_id=1838972906]
 layout_mode = 3
@@ -150,25 +145,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_jyhfs")
 text = " III гр. "
 metadata/_edit_lock_ = true
 
-[node name="Info" type="Button" parent="." unique_id=77717392]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.94900006
-anchor_top = 0.90400004
-anchor_right = 0.98
-anchor_bottom = 0.961
-offset_left = -0.24804688
-offset_top = 0.20800781
-offset_right = 476.04004
-offset_bottom = 463.27197
-scale = Vector2(0.07034562, 0.07290954)
-theme_override_font_sizes/font_size = 29
-theme_override_styles/normal = SubResource("StyleBoxFlat_tbgi4")
-text = "i"
-icon = ExtResource("4_tbgi4")
-script = ExtResource("4_jyhfs")
-metadata/_edit_lock_ = true
-
-[node name="InfoDialog" parent="." unique_id=1413302711 instance=ExtResource("5_tbgi4")]
+[node name="InfoOverlay" parent="." unique_id=419437678 instance=ExtResource("5_tbgi4")]
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
