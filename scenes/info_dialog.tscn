@@ -4,7 +4,6 @@
 oversampling_override = 1.0
 position = Vector2i(0, 36)
 size = Vector2i(5819, 548)
-visible = true
 dialog_text = "О приложении
 
 «Тест-драйв знаний» — простые вопросы с ответами.

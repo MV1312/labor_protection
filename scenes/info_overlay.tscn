@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://bwenv0ecyp8b2"]
 
 [ext_resource type="Texture2D" uid="uid://bbnsan6cf8h88" path="res://image /Info-Button.png" id="1_0q13e"]
+[ext_resource type="Script" uid="uid://b0gcvje2fqhld" path="res://scenes/info_overlay.gd" id="1_sxi83"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e5ydw"]
 bg_color = Color(0, 0, 0, 0.882)
 
 [node name="InfoOverlay" type="CanvasLayer" unique_id=419437678]
+script = ExtResource("1_sxi83")
 
 [node name="DimBackground" type="ColorRect" parent="." unique_id=1580703273]
 anchors_preset = -1
@@ -15,7 +17,7 @@ offset_right = -3.0
 offset_bottom = -0.056030273
 metadata/_edit_lock_ = true
 
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=113885438]
+[node name="InfoWindow" type="PanelContainer" parent="." unique_id=113885438]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -26,11 +28,13 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_e5ydw")
 metadata/_edit_lock_ = true
 
 [node name="TapToClose" type="Control" parent="." unique_id=755759846]
+visible = false
 layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
-anchor_bottom = 0.99200004
-offset_right = -1.0
-offset_bottom = 0.18395996
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 metadata/_edit_lock_ = true
 
 [node name="InfoButton" type="Button" parent="." unique_id=122900093]
