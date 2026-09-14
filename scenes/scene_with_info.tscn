@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://ctcomd5s5ta0t"]
+
+[ext_resource type="Script" uid="uid://itohrynbum5e" path="res://scripts/rich_text_label.gd" id="1_ngcvt"]
+[ext_resource type="Script" uid="uid://berxmgr0j1k4o" path="res://scripts/rich_text_label_2.gd" id="2_f7xwm"]
+
+[node name="SceneWithInfo" type="CanvasLayer" unique_id=962389619]
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=315220386]
+anchors_preset = -1
+anchor_left = 0.09
+anchor_top = 0.127
+anchor_right = 0.91800004
+anchor_bottom = 0.92600006
+offset_left = 0.31999207
+offset_top = -0.29600525
+offset_right = -0.53601074
+offset_bottom = -0.048034668
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=481783256]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="PanelContainer/VBoxContainer" unique_id=559230695]
+clip_contents = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.43951297, 0.9347653, 0.927146, 1)
+theme_override_font_sizes/font_size = 30
+text = "«Как обновить приложение! »"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/VBoxContainer" unique_id=644498554]
+clip_contents = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/ScrollContainer" unique_id=424912023]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 17
+text = "Внимание! 
+Обновления приложения будут  доступны в Telegram! 
+Все актуальные версии этого приложения будут выходить в Telegram-канале по ссылке ниже.
+
+Инструкция по обновлению:
+1. Подпишитесь на канал:
+2. Когда выйдет новая версия, будут приходить  уведомление.
+3. Скачайте файл из поста.
+4. Откройте файл и нажмите «Обновить» (или «Установить»).
+5. Готово! Вы пользуетесь самой новой версией.
+
+
+Если у вас Android, при установке может потребоваться разрешение на установку из неизвестных источников.
+Это стандартная процедура.
+
+По другим вопросам  обращайтесь:
+
+
+
+
+
+"
+metadata/_edit_lock_ = true
+
+[node name="TelegramLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer/ScrollContainer/Label" unique_id=245210820]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.74300003
+anchor_right = 0.24100001
+anchor_bottom = 0.81500006
+offset_top = -0.11300659
+offset_right = 0.4349823
+offset_bottom = 0.16500854
+theme_override_colors/default_color = Color(0.17085916, 0.7360148, 0.92148155, 1)
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 18
+bbcode_enabled = true
+text = "Телеграмм:    [url=\"https://t.me/Rukbat_V\"]Telegram"
+script = ExtResource("1_ngcvt")
+metadata/_edit_lock_ = true
+
+[node name="ViberLabel2" type="RichTextLabel" parent="PanelContainer/VBoxContainer/ScrollContainer/Label" unique_id=968396569]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.27600002
+anchor_top = 0.74300003
+anchor_right = 0.518
+anchor_bottom = 0.83000004
+offset_left = -0.34002686
+offset_top = -0.11300659
+offset_right = 0.31500244
+offset_bottom = 0.0029296875
+theme_override_colors/default_color = Color(0.4616899, 0.4837138, 1, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "Вайбер:   [url=\"https://vb.me/letsChatOnViber\"]Viber[/url]"
+script = ExtResource("2_f7xwm")
+metadata/_edit_lock_ = true
+
+[node name="SocialNetworks" type="RichTextLabel" parent="PanelContainer/VBoxContainer/ScrollContainer/Label" unique_id=660288953]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.16100001
+anchor_bottom = 0.55
+offset_left = 4.0
+offset_top = 2.5
+offset_right = -0.3650055
+offset_bottom = -0.05001831
+theme_override_colors/default_color = Color(0.9963737, 0.29708722, 0.47085494, 1)
+theme_override_font_sizes/normal_font_size = 20
+text = "Важно!!! "
+scroll_active = false
+metadata/_edit_lock_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer/ScrollContainer/Label" unique_id=1136696839]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.257
+anchor_top = 0.215
+anchor_right = 0.48200002
+anchor_bottom = 0.277
+offset_left = -2.005005
+offset_top = 2.9349976
+offset_right = -2.1300354
+offset_bottom = 3.2929993
+theme_override_colors/default_color = Color(0.19700262, 0.7309868, 0.8510246, 1)
+theme_override_font_sizes/normal_font_size = 20
+text = "Группа в Телеграмм "

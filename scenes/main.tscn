@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://ciq7xo3obxfhx"]
 
-[ext_resource type="Script" uid="uid://itohrynbum5e" path="res://scripts/rich_text_label.gd" id="1_0wfyh"]
-[ext_resource type="Script" uid="uid://berxmgr0j1k4o" path="res://scripts/rich_text_label_2.gd" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://eotr7xmfbr35" path="res://scripts/main.gd" id="1_sugp2"]
 [ext_resource type="PackedScene" uid="uid://bwenv0ecyp8b2" path="res://scenes/info_overlay.tscn" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://dxoxfn84wc6jn" path="res://scenes/update_button.tscn" id="5_tefeu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wfyh"]
 bg_color = Color(0.38109186, 0.38109186, 0.38109186, 1)
@@ -34,57 +33,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sugp2")
-metadata/_edit_lock_ = true
-
-[node name="TelegramLabel" type="RichTextLabel" parent="." unique_id=1124756761]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.061000004
-anchor_top = 0.89400005
-anchor_right = 0.38900003
-anchor_bottom = 0.975
-offset_left = -0.27200317
-offset_top = -0.31201172
-offset_right = -0.12802124
-offset_bottom = 0.2000122
-theme_override_colors/default_color = Color(0.17085916, 0.7360148, 0.92148155, 1)
-theme_override_font_sizes/normal_font_size = 25
-theme_override_font_sizes/bold_font_size = 18
-bbcode_enabled = true
-text = "Телеграмм:    [url=\"https://t.me/Rukbat_V\"]Telegram"
-script = ExtResource("1_0wfyh")
-metadata/_edit_lock_ = true
-
-[node name="ViberLabel2" type="RichTextLabel" parent="." unique_id=1032435986]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.060000002
-anchor_top = 0.81500006
-anchor_right = 0.305
-anchor_bottom = 0.90000004
-offset_left = -0.12000275
-offset_top = -0.12005615
-offset_right = -2.3600159
-offset_bottom = 0.7999878
-theme_override_colors/default_color = Color(0.4616899, 0.4837138, 1, 1)
-theme_override_font_sizes/normal_font_size = 25
-bbcode_enabled = true
-text = "Вайбер:   [url=\"https://vb.me/letsChatOnViber\"]Viber[/url]"
-script = ExtResource("1_o5qli")
-metadata/_edit_lock_ = true
-
-[node name="SocialNetworks" type="RichTextLabel" parent="." unique_id=763582038]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.72700006
-anchor_right = 0.425
-anchor_bottom = 0.80700004
-offset_left = 112.0
-offset_top = 8.903961
-offset_right = 112.399994
-offset_bottom = 9.063965
-theme_override_font_sizes/normal_font_size = 25
-text = "Контактные данные:"
 metadata/_edit_lock_ = true
 
 [node name="Header" type="Label" parent="." unique_id=1933942826]
@@ -146,5 +94,7 @@ text = " III гр. "
 metadata/_edit_lock_ = true
 
 [node name="InfoOverlay" parent="." unique_id=419437678 instance=ExtResource("5_tbgi4")]
+
+[node name="UpdateButton" parent="." unique_id=577167815 instance=ExtResource("5_tefeu")]
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

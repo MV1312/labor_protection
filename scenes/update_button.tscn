@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dxoxfn84wc6jn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6387"]
+bg_color = Color(0.36766353, 0.3676636, 0.3676634, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=577167815]
+layer = 10
+
+[node name="Button" type="Button" parent="." unique_id=683140579]
+anchors_preset = -1
+anchor_left = 0.018000001
+anchor_top = 0.906
+anchor_right = 0.10300001
+anchor_bottom = 0.95400006
+offset_left = 0.26399803
+offset_top = -0.088012695
+offset_right = 0.34399414
+offset_bottom = -0.1920166
+theme_override_styles/normal = SubResource("StyleBoxFlat_f6387")
+text = "Обновить! "
+metadata/_edit_lock_ = true
