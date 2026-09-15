@@ -93,8 +93,10 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_jyhfs")
 text = " III гр. "
 metadata/_edit_lock_ = true
 
-[node name="InfoOverlay" parent="." unique_id=419437678 instance=ExtResource("5_tbgi4")]
-
 [node name="UpdateButton" parent="." unique_id=577167815 instance=ExtResource("5_tefeu")]
+offset = Vector2(0, -0.032)
+transform = Transform2D(1, 0, 0, 1, 0, -0.032)
+
+[node name="InfoOverlay" parent="." unique_id=419437678 instance=ExtResource("5_tbgi4")]
 
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

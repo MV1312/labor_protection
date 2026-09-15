@@ -2,7 +2,7 @@ extends CanvasLayer
 
 # Сюда впишите ИМЕНА корневых узлов тех сцен, где кнопка должна быть видна.
 # Например, если корневой узел вашего уровня называется "Level1", пишите "Level1".
-var allowed_scenes = ["Control", "main"]
+var allowed_scenes = ["Control", "main", "SceneWithInfo"]
 
 var last_scene_name = ""
 

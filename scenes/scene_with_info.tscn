@@ -17,6 +17,7 @@ offset_right = -0.53601074
 offset_bottom = -0.048034668
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=481783256]
+clip_contents = true
 layout_mode = 2
 
 [node name="TitleLabel" type="Label" parent="PanelContainer/VBoxContainer" unique_id=559230695]
@@ -35,7 +36,7 @@ size_flags_vertical = 3
 [node name="Label" type="Label" parent="PanelContainer/VBoxContainer/ScrollContainer" unique_id=424912023]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 17
+theme_override_font_sizes/font_size = 20
 text = "Внимание! 
 Обновления приложения будут  доступны в Telegram! 
 Все актуальные версии этого приложения будут выходить в Telegram-канале по ссылке ниже.

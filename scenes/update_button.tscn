@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://dxoxfn84wc6jn"]
 
+[ext_resource type="Script" uid="uid://cerbriypbaqsj" path="res://scripts/update_button.gd" id="1_sg5y3"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6387"]
 bg_color = Color(0.36766353, 0.3676636, 0.3676634, 1)
 corner_radius_top_left = 10
@@ -8,7 +10,7 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=577167815]
-layer = 10
+script = ExtResource("1_sg5y3")
 
 [node name="Button" type="Button" parent="." unique_id=683140579]
 anchors_preset = -1
@@ -23,3 +25,5 @@ offset_bottom = -0.1920166
 theme_override_styles/normal = SubResource("StyleBoxFlat_f6387")
 text = "Обновить! "
 metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

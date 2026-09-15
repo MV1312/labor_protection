@@ -4,6 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://sab0y7v8g368" path="res://image /2249.png" id="2_5femt"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_loqhc"]
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=191091185]
 script = ExtResource("1_fhyh8")
