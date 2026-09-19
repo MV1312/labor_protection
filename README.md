@@ -1,6 +1,9 @@
 
 Labor Protection - Theory
 
+[![Godot Engine](https://img.shields.io/badge/Godot-3.x-478CBF?logo=godot-engine&logoColor=white)](https://godotengine.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active_Development-yellowgreen)](https://github.com/MV1312/labor_protection)
 
 An application designed to help users prepare for and pass the theoretical exam on labor protection (occupational safety). Built to help you quickly and effectively memorize the material and confidently pass the test.
 
