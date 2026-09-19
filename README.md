@@ -1,7 +1,7 @@
 
 Labor Protection - Theory
 
-[![Godot Engine](https://img.shields.io/badge/Godot-3.x-478CBF?logo=godot-engine&logoColor=white)](https://godotengine.org/)
+[![Godot Engine](https://img.shields.io/badge/Godot-4.x-478CBF?logo=godot-engine&logoColor=white)](https://godotengine.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active_Development-yellowgreen)](https://github.com/MV1312/labor_protection)
 
