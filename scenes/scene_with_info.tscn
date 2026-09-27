@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://ctcomd5s5ta0t"]
 
-[ext_resource type="Script" uid="uid://itohrynbum5e" path="res://scripts/rich_text_label.gd" id="1_ngcvt"]
-[ext_resource type="Script" uid="uid://berxmgr0j1k4o" path="res://scripts/rich_text_label_2.gd" id="2_f7xwm"]
-[ext_resource type="Script" uid="uid://cuhxo2fojfpi7" path="res://scenes/rich_text_label.gd" id="3_phvbl"]
+[ext_resource type="Script" uid="uid://itohrynbum5e" path="res://scripts/telegramm_text_label.gd" id="1_ngcvt"]
+[ext_resource type="Script" uid="uid://berxmgr0j1k4o" path="res://scripts/wiber_text_label_2.gd" id="2_f7xwm"]
+[ext_resource type="Script" uid="uid://cuhxo2fojfpi7" path="res://scripts/gr_telegramm_text_label.gd" id="3_phvbl"]
 
 [node name="SceneWithInfo" type="CanvasLayer" unique_id=962389619]
 
@@ -82,6 +82,7 @@ theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true
 text = "Группа в [url=\"https://t.me/+_QiroWNYQmVkODJi\"] Телеграмм [/url]"
 script = ExtResource("3_phvbl")
+metadata/_edit_lock_ = true
 
 [node name="TelegramLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer/ScrollContainer/Label" unique_id=245210820]
 layout_mode = 1
