@@ -1,5 +1,5 @@
 
-Labor Protection - Theory
+Occupational safety at height - Theory
 
 [![Godot Engine](https://img.shields.io/badge/Godot-4.x-478CBF?logo=godot-engine&logoColor=white)](https://godotengine.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
