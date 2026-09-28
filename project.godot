@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="OT"
+config/version="1.0.0"
 run/main_scene="uid://ciq7xo3obxfhx"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
