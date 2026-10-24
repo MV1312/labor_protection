@@ -1,67 +1,30 @@
+# Occupational safety at height - Theory / Охрана труда при работе на высоте - Теория
 
-Occupational safety at height - Theory
-
-[![Godot Engine](https://img.shields.io/badge/Godot-4.x-478CBF?logo=godot-engine&logoColor=white)](https://godotengine.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active_Development-yellowgreen)](https://github.com/MV1312/labor_protection)
-
-An application designed to help users prepare for and pass the theoretical exam on labor protection (occupational safety). Built to help you quickly and effectively memorize the material and confidently pass the test.
-
-🚀 Features
-
-· Self-check question bank: Study and review key labor protection topics.
-· Convenient navigation: A well-thought-out menu structure with a global "Back" button for comfortable movement between sections.
-· App information: A built-in section with a description and contact details.
-· Social links: Quick access to related resources directly from the app.
-
-📸 Screenshots & Demo
-
-
-🎥 Example of embedding a video/GIF:
-[![App Demo](video_preview_link)](full_video_link)
-
-🛠️ Technologies
-
-· Language: GDScript
-· Engine: Godot Engine 4.x 
-· Platform: The app is developed for Android.
-
-⬇️ Installation & Getting Started
-
-### 📱 For Users (Ready-to-use App)
-
-1. 📥 **[Download the latest .apk file (Release 1.0.0)](https://github.com/MV1312/labor_protection/releases/latest)**
-2. Install the file on your Android device.
-3. ⚠️ **Important:** During installation, you will need to grant permission to install third-party apps. This is a standard procedure for apps outside the Google Play Store. The app is completely safe, does not collect personal data, and contains no covert surveillance.
-
-For Developers
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/MV1312/labor_protection.git
-   ```
-2. Open the project folder in Godot Engine (version 4.x).
-3. Run the project from the editor or export it for your target platform.
-
-📁 Project Structure
-
-· scenes/ – contains all interface scenes (menus, question screens, information).
-· scripts/ – GDScript files for app logic and UI management.
-· image/ – graphical resources, icons, and backgrounds.
-· export_presets.cfg – export settings for different platforms.
-
-🤝 Contributing
-
-The project is open to improvements! If you'd like to contribute:
-
-1. Report bugs in the Issues section.
-2. Suggest new features or UI improvements.
-3. Submit a Pull Request with your changes.
-
-📄 License
-
-This project is distributed under the MIT License. See the LICENSE file for details.
+[🇬🇧 English](#english) | [🇷🇺 Русский](#русский)
 
 ---
 
-Good luck on your labor protection exam! 💪
+<a id="english"></a>
+## 🇬🇧 English
+
+An application designed to help users prepare for and pass the theoretical exam on labor protection (occupational safety). Built to help you quickly and effectively memorize the material and confidently pass the test.
+
+### 🚀 Features
+- **Self-check question bank**: Study and review key labor protection topics.
+- **Convenient navigation**: A well-thought-out menu structure with a global "Back" button.
+- **App information**: A built-in section with a description and contact details.
+- **Social links**: Quick access to related resources directly from the app.
+
+### 🛠️ Technologies
+- **Language**: GDScript
+- **Engine**: Godot Engine 4.x
+- **Platform**: Android
+
+### ⬇️ Installation
+**For Users**: 
+📥 **[Download the latest .apk file (Release 1.0.0)](https://github.com/MV1312/labor_protection/releases/latest)**
+*(Note: You will need to allow installation from unknown sources in your Android settings. The app is completely safe and collects no personal data).*
+
+**For Developers**:
+```bash
+git clone https://github.com/MV1312/labor_protection.git
