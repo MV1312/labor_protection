@@ -28,15 +28,11 @@ An application designed to help users prepare for and pass the theoretical exam 
 
 ⬇️ Installation & Getting Started
 
-For Users (Ready-to-use App)
+### 📱 For Users (Ready-to-use App)
 
-1. Go to the Releases section on GitHub.
-2. Download the latest .apk file.
-3. Install it on your Android device.
-
-Important!!! 
-When installing on Android, you will need permission to install third‑party apps; this is a standard procedure! 
-The app does not collect your personal data, does not conduct any covert surveillance, and is completely safe!!!
+1. 📥 **[Download the latest .apk file (Release 1.0.0)](https://github.com/MV1312/labor_protection/releases/latest)**
+2. Install the file on your Android device.
+3. ⚠️ **Important:** During installation, you will need to grant permission to install third-party apps. This is a standard procedure for apps outside the Google Play Store. The app is completely safe, does not collect personal data, and contains no covert surveillance.
 
 For Developers
 
