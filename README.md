@@ -60,3 +60,10 @@ This project is distributed under the MIT License. See the [LICENSE](LICENSE) fi
 **Для разработчиков**:
 ```bash
 git clone https://github.com/MV1312/labor_protection.git
+```
+Откройте папку проекта в Godot Engine (версии 4.x) и запустите или экспортируйте его.
+
+## 📄 Лицензия
+Этот проект распространяется под лицензией MIT. Подробности в файле LICENSE.
+
+### 💪 Good luck on your labor protection exam! / Удачи на экзамене по охране труда!
