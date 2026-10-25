@@ -15,6 +15,20 @@ An application designed to help users prepare for and pass the theoretical exam 
 - **App information**: A built-in section with a description and contact details.
 - **Social links**: Quick access to related resources directly from the app.
 
+### 📸 Screenshots and demonstration
+(Your screenshots will go here. As for the video: yes, you can add it — just provide a link to YouTube or a GIF recording of the screen to demonstrate the app in action in the README.)
+#### 🖼️ Screenshots of the interface: 
+main menu — <img width="2340" height="1080" alt="45849" src="https://github.com/user-attachments/assets/8e3a361b-e605-4d7b-8284-764b98221c38" />
+
+screen with questions — <img width="2340" height="1080" alt="45850" src="https://github.com/user-attachments/assets/0ba0babe-dce4-4909-8b6f-a30f2354487e" />
+
+answers — <img width="2340" height="1080" alt="45851" src="https://github.com/user-attachments/assets/bfa740dd-0e8c-4739-bc86-ffbc07c8962c" />
+
+“About the app” section - <img width="2340" height="1080" alt="45852" src="https://github.com/user-attachments/assets/a3035ffd-a370-46ed-be50-1e7e55be8552" />
+ 
+#### 🎥 Example of embedding a video/GIF:
+[![App demonstration]
+
 ### 🛠️ Technologies
 - **Language**: GDScript
 - **Engine**: Godot Engine 4.x
@@ -46,6 +60,17 @@ This project is distributed under the MIT License. See the [LICENSE](LICENSE) fi
 - **Удобная навигация**: Продуманная структура меню с глобальной кнопкой "Назад" для комфортного перемещения.
 - **Информация о приложении**: Встроенный раздел с описанием и контактами.
 - **Социальные ссылки**: Быстрый доступ к связанным ресурсам прямо из приложения.
+
+### 📸 Скриншоты и демонстрация
+#### 🖼️ Скриншоты интерфейса: 
+ главное меню -  <img width="2340" height="1080" alt="45849" src="https://github.com/user-attachments/assets/cd1badfa-e986-4af3-b6d6-dfc3716629fc" />
+ экран с вопросами - <img width="2340" height="1080" alt="45850" src="https://github.com/user-attachments/assets/b5165355-3cb4-4624-9c62-4612eac0da10" />
+ ответы - <img width="2340" height="1080" alt="45851" src="https://github.com/user-attachments/assets/5ae54d45-6658-4eb2-9e83-94dc1d1ddf0d" />
+  раздел «О приложении» - <img width="2340" height="1080" alt="45852" src="https://github.com/user-attachments/assets/a0d2a508-4c40-40d3-9907-41f8e951868e" />
+. 
+#### 🎥 Пример встраивания видео/GIF:
+[![Демонстрация приложения]]
+
 
 ### 🛠️ Технологии
 - **Язык**: GDScript
