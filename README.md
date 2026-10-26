@@ -27,7 +27,9 @@ answers — <img width="2340" height="1080" alt="45851" src="https://github.com/
 “About the app” section - <img width="2340" height="1080" alt="45852" src="https://github.com/user-attachments/assets/a3035ffd-a370-46ed-be50-1e7e55be8552" />
  
 #### 🎥 Example of embedding a video/GIF:
-[![App demonstration]
+<img width="368" height="800" alt="45893" src="https://github.com/user-attachments/assets/e0749343-2b8f-4209-9ffd-3296993ed102" />
+<img width="368" height="800" alt="45894" src="https://github.com/user-attachments/assets/73f83cb1-d7dd-42aa-a94b-4cb341dfaaef" />
+
 
 ### 🛠️ Technologies
 - **Language**: GDScript
@@ -69,7 +71,9 @@ This project is distributed under the MIT License. See the [LICENSE](LICENSE) fi
   раздел «О приложении» - <img width="2340" height="1080" alt="45852" src="https://github.com/user-attachments/assets/a0d2a508-4c40-40d3-9907-41f8e951868e" />
 . 
 #### 🎥 Пример встраивания видео/GIF:
-[![Демонстрация приложения]]
+<img width="368" height="800" alt="45893" src="https://github.com/user-attachments/assets/3d68e146-2eb5-4580-8a7c-5b0b93d53da2" />
+<img width="368" height="800" alt="45894" src="https://github.com/user-attachments/assets/7ae76533-a8eb-4e06-8070-dfb10c34ebf3" />
+
 
 
 ### 🛠️ Технологии
